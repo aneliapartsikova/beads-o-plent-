@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cart-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .add-to-cart {
+            background-color: #7f886a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img src="images/logo.jpg" alt="" class="logo__img">
+
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="index.html" class="menu__list-link">главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="kateg.html" class="menu__list-link">Корзина</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="obrsv.html" class="menu__list-link">Обратная связь</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="kart.html" class="menu__list-link">Скидочная карта</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="prais.html" class="menu__list-link">прайс</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="nap">
+                <div class="container">
+                    <h2 class="section-title" id="kolie">Колье</h2>
+                    <div class="tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="card">
+                                    <img class="card__img" src="images/card11.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1000рэ</h4>
+                                    <button class="add-to-cart" data-name="Колье 1" data-price="1000">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card12.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1100рэ</h4>
+                                    <button class="add-to-cart" data-name="Колье 2" data-price="1100">В корзину</button>
+                                </div><div class="card">
+                                    <img class="card__img" src="images/card13.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">900рэ</h4>
+                                    <button class="add-to-cart" data-name="Колье 3" data-price="900">В корзину</button>
+                                </div><div class="card">
+                                    <img class="card__img" src="images/card14.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">950рэ</h4>
+                                    <button class="add-to-cart" data-name="Колье 4" data-price="950">В корзину</button>
+                                </div><div class="card">
+                                    <img class="card__img" src="images/card15.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1200рэ</h4>
+                                    <button class="add-to-cart" data-name="Колье 5" data-price="1200">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="section-title" id="bracelet">Браслеты</h2>
+                    <div class="tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="card">
+                                    <img class="card__img" src="images/card6.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">100рэ</h4>
+                                    <button class="add-to-cart" data-name="Браслет 1" data-price="1000">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card7.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">950рэ</h4>
+                                    <button class="add-to-cart" data-name="Браслет 2" data-price="950">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card8.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1150рэ</h4>
+                                    <button class="add-to-cart" data-name="Браслет 3" data-price="1150">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card9.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1200рэ</h4>
+                                    <button class="add-to-cart" data-name="Браслет 4" data-price="1200">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card10.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">990рэ</h4>
+                                    <button class="add-to-cart" data-name="Браслет 5" data-price="990">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="section-title" id="ring">Кольца</h2>
+                    <div class="tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="card">
+                                    <img href="product.html" class="card__img" src="images/card.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title" >1000рэ</h4>
+                                    <button class="add-to-cart" data-name="Кольцо 1" data-price="1000">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card1.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">950рэ</h4>
+                                    <button class="add-to-cart" data-name="Кольцо 2" data-price="950">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card2.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1150рэ</h4>
+                                    <button class="add-to-cart" data-name="Кольцо 3" data-price="1150">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card3.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1200рэ</h4>
+                                    <button class="add-to-cart" data-name="Кольцо 4" data-price="1200">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card4.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">990рэ</h4>
+                                    <button class="add-to-cart" data-name="Кольцо 5" data-price="990">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container cer" >
+                    <h2 class="section-title" id="earri">Серьги</h2>
+                    <div class="tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="card">
+                                    <img class="card__img" src="images/card16.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">100рэ</h4>
+                                    <button class="add-to-cart" data-name="Серьги 1" data-price="1000">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card17.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">950рэ</h4>
+                                    <button class="add-to-cart" data-name="Серьги 2" data-price="950">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card18.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1150рэ</h4>
+                                    <button class="add-to-cart" data-name="Серьги 3" data-price="1150">В корзину</button>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/card19.png" alt="">
+                                    <a href="product.html">подробнее...</a>
+                                    <h4 class="card__title">1200рэ</h4>
+                                    <button class="add-to-cart" data-name="Серьги 4" data-price="1200">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Корзина -->
+                <div class="cart-container">
+                    <button id="cart-btn">Корзина <span id="cart-count">0</span></button>
+                    <div id="cart-items"></div>
+                    <p>Итого: <span id="cart-total">0</span> рэ</p>
+                </div>
+            
+                <script>
+                    const cartBtn = document.getElementById('cart-btn');
+                    const cartItems = document.getElementById('cart-items');
+                    const cartTotal = document.getElementById('cart-total');
+                    const cartCount = document.getElementById('cart-count');
+                    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+                    let cart = [];
+            
+                    addToCartButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const name = button.dataset.name;
+                            const price = parseInt(button.dataset.price);
+                            addToCart(name, price);
+                        });
+                    });
+            
+                    function addToCart(name, price) {
+                        cart.push({ name, price });
+                        updateCart();
+                    }
+            
+                    function updateCart() {
+                        let total = 0;
+                        cartItems.innerHTML = '';
+            
+                        cart.forEach(item => {
+                            const itemElement = document.createElement('div');
+                            itemElement.textContent = `${item.name} - ${item.price} рэ`;
+                            cartItems.appendChild(itemElement);
+                            total += item.price;
+                        });
+            
+                        cartTotal.textContent = total;
+                        cartCount.textContent = cart.length;
+                    }
+            
+                    cartBtn.addEventListener('click', () => {cartItems.style.display = cartItems.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
+        <footer class="footer">
+            <div class="container">
+                <ul class="inst">
+                    <li class="inst__item">
+                        <a href="#" class="inst__item-link">
+                            <img class="inst__item-link" src="images/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="inst__item">
+                        <a href="#" class="inst__item-link">
+                            <img class="inst" src="images/vk.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__cont">
+                    <p class="footer__cont-text">
+                        89184579005
+                    </p>
+                    <p class="footer__cont-text">
+                        aneliapartsikova4000@gmail.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+input,
+textarea {
+  box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#7f886a ,#f3ecdb);
+    display: flex;
+    justify-content: center; /* чтобы контейнер */
+    align-items: center; /* был по центру */
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+  
+  /* Стили самой формы */
+.content {
+    display: flex; /* делаем колонки в ряд */
+    align-items: center; /* выравниваем по центру */
+    justify-content: center; 
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+   
+}
+.right-side {
+  align-items: center;
+
+    
+}
+/* Заголовок правой колонки */
+  .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e503c;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  
+  
+  /* Контейнер для input'ов формы */
+  .input-box {
+    align-items: center;
+    height: 50px; /* по сути задаем высоту input'а */
+    width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+    margin-bottom: 20px; /* отступаем снизу 20px */
+   
+  }
+  
+  
+  
+  
+  
+  /* Стили для контейнера кнопки */
+  .submit {
+    display: inline-block; /* делаем блочно-строчный элемент */
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  /* Стили для самой кнопки */
+  .submit input {
+    color: #fff;
+    font-size: 18px;
+    background: #3e503c;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+  }
+  
+  /* Меняем цвет фона при наведении на кнопку */
+  .submit input:hover {
+    background: #ff6f3d;
+  }  
+
+  #main-image {
+    max-width: 300px;
+}
+
+.more-images img {
+    width: 123px;
+}
+/* CSS для рекламного предложения */
+.banner {
+  width: 100%;
+  height: 200px;
+  background: url("image/r0.jpg") no-repeat;
+  background-size: cover;
+  animation: snowfall 10s infinite linear;
+}
+
+/* CSS анимации snowfall */
+@keyframes snowfall {
+  0% {
+    background-image: url("image/r1.jpg");
+  }
+  20% {
+    background-image: url("image/r2.jpg");
+  }
+  40% {
+    background-image: url("image/r3.jpg");
+  }
+  60% {
+    background-image: url("image/r4.jpg");
+  }
+  80% {
+    background-image: url("image/r5.jpg");
+  }
+  100% {
+    background-image: url("image/r1.jpg");
+  }
+}

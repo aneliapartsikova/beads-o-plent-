@@ -1,0 +1,69 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<link rel="stylesheet" href="styleprod.css" />
+<script>
+
+
+</script>
+</head> 
+<body> 
+  <div class="container">
+    <div class="content">
+        <div class="right-side">
+          <div class="topic-text">Кольца</div>
+          <form action="#">
+            
+            <img id="main-image" src="images/1.jpg">
+            <div class="more-images">
+              <img src="images/1.jpg" onmouseover="changeImage('images/1.jpg')" onmouseout="resetImage()">
+              <img src="images/card.png" onmouseover="changeImage('images/card.png')" onmouseout="resetImage()">
+            </div>
+            <p>ID - 02</p>
+            <p>Название - кольцо в виде глаза</p>
+            <p>Цена - 950 рэ</p>
+            <p>Категория - Кольца</p>
+            <p>Материал - Бисер</p>
+            <div id="rating_bar">
+              <span id="rate_1">&#9734;</span>
+              <span id="rate_2">&#9734;</span>
+              <span id="rate_3">&#9734;</span>
+              <span id="rate_4">&#9734;</span>
+              <span id="rate_5">&#9734;</span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function changeImage(imageUrl) {
+      document.getElementById('main-image').src = imageUrl;
+    }
+
+    function resetImage() {
+      document.getElementById('main-image').src = 'images/card.png';
+    }
+
+
+    let spans = document.getElementById("rating_bar").getElementsByTagName('span');
+
+for (let i = 0; i < spans.length; i++) {
+  spans[i].onmouseover = hoverStar;
+}
+
+function hoverStar() {
+  for (let i = 0; i < this.id.charAt(5); i++) {
+    spans[i].innerText = '⭐️';
+  }
+
+  for (let i = this.id.charAt(5); i < 5; i++) {
+    spans[i].innerText = '✰';
+  }
+}
+  </script>
+</body> 
+</html> 

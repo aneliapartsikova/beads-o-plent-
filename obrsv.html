@@ -1,0 +1,62 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<link rel="stylesheet" href="style2.css" />
+<script type="text/javascript"> 
+  function ValidMail1() {     let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;     let myMail = document.getElementById('email').value;     let valid = re.test(myMail); 
+    if (valid) output = 'Адрес элeктронной почты введен правильно!'; 
+    else output = 'Адрес электронной почты введен неправильно!';     document.getElementById('message').innerHTML = output;     return valid; 
+} 
+</script> 
+<script type="text/javascript"> 
+  function ValidMail2() {     let re = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/;     let myMail = document.getElementById('name').value;     let valid = re.test(myMail); 
+    if (valid) output = 'Имя введено правильно!'; 
+    else output = 'Имя введено неправильно!';     document.getElementById('message1').innerHTML = output;     return valid; 
+} 
+</script> 
+<script type="text/javascript"> 
+  function ValidMail3() {     let re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;     let myMail = document.getElementById('tel').value;     let valid = re.test(myMail); 
+    if (valid) output = 'Номер телефона введен правильно!'; 
+    else output = 'Номер телефона введен неправильно!';     document.getElementById('message2').innerHTML = output;     return valid; 
+} 
+</script> 
+<script type="text/javascript"> 
+  function ValidMail4() {     let re = /^[a-zA-Z0-9]+$/;     let myMail = document.getElementById('text').value;     let valid = re.test(myMail); 
+    if (valid) output = 'Текст введен правильно!'; 
+    else output = 'Введите ваше сообщение!';     document.getElementById('message3').innerHTML = output;     return valid; 
+} 
+</script> 
+</head> 
+<body> 
+  <div class="container">
+    <div class="content">
+        <div class="right-side">
+          <div class="topic-text">Отправьте нам сообщение</div>
+          <form action="#">
+            <p id="message" >Введите электронную почту</p>
+            <div class="input-box">
+              <input id="email" name="email" type="text" size="20" /><br />  
+            </div>
+            <p id="message1" >Введите имя</p>  
+            <div class="input-box">
+              <input id="name" name="name" type="text" size="20" /><br />  
+            </div>
+            <p id="message2" >Введите номер телефона</p> 
+            <div class="input-box"> 
+              <input id="tel" name="tel" type="text" size="20" /><br />  
+            </div>
+            <p id="message3" >Введите ваше сообщение</p> 
+            <div class="input-box message-box"> 
+              <textarea id="text" name="text" type="text" size="20"></textarea>  
+            </div>
+            
+          </form>
+          <div class="submit">
+            <input name="button" type="submit" value="Отправить" onClick="ValidMail2(); ValidMail1(); ValidMail3(); ValidMail4()" /> 
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body> 
+</html> 

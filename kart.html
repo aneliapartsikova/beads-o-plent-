@@ -1,0 +1,64 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<link rel="stylesheet" href="style1.css" />
+<script>
+  function capitalizeText(elementId) {
+    var input = document.getElementById(elementId);
+    input.value = input.value.toUpperCase(); // Преобразует текст в поле ввода в заглавные буквы
+  }
+
+  function submitForm() {
+    var lastName = document.getElementById('last-name').value.toUpperCase(); // Получает значение фамилии и преобразует его в заглавные буквы
+    var firstName = document.getElementById('first-name').value.toUpperCase(); // Получает значение имени и преобразует его в заглавные буквы
+    var age = document.getElementById('age').value; // Получает значение возраста
+
+    if (age < 18) { // Проверка возраста на условие "меньше 18"
+      alert("Карта выдается только после 18 лет"); // Выводит сообщение об ошибке
+      return;
+    }
+
+    var cardNumber = Math.floor(Math.random() * 1000000); // Генерирует случайное число для номера карты
+    var message = "Номер карты: " + cardNumber + "\nФамилия: " + lastName + "\nИмя: " + firstName; // Формирует сообщение с номером карты, фамилией и именем
+
+    alert(message); // Выводит диалоговое окно с информацией о номере карты, фамилии и имени
+  }
+
+  function resetForm() {
+    document.getElementById('last-name').value = ""; // Сбрасывает поле фамилии
+    document.getElementById('first-name').value = ""; // Сбрасывает поле имени
+    document.getElementById('age').value = ""; // Сбрасывает поле возраста
+    document.getElementById('tel').value = "";
+  }
+</script>
+</head> 
+<body> 
+  <div class="container">
+    <div class="content">
+        <div class="right-side">
+          <div class="topic-text">Заполните форму</div>
+          <form action="#">
+            <div class="input-box">
+              <input id="first-name" name="first-name" type="text" size="20" placeholder="Ваше имя" onchange="capitalizeText('first-name')" /><br />  
+            </div> 
+            <div class="input-box">
+              <input id="last-name" name="last-name" type="text" size="20" placeholder="Ваша фамилия" onchange="capitalizeText('last-name')"/><br />  
+            </div>
+            <div class="input-box"> 
+              <input id="tel" name="tel" type="text" size="20" placeholder="Введите номер телефона"/><br />  
+            </div>
+            <div class="input-box"> 
+              <input id="age" name="age" type="number" size="20" placeholder="Ваш возраст"/><br />  
+            </div>
+            
+          </form>
+          <div class="submit">
+            <input name="button" type="submit" value="Создать карту" onclick="submitForm()"/> 
+            <input name="button" type="reset" value="Очистить" onclick="resetForm()"/> 
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body> 
+</html> 

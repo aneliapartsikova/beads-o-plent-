@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400&display=swap" rel="stylesheet">
+    <link href="css/css2.css" rel="stylesheet">
+    <link  href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header header-main">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img src="images/logo.jpg" alt="" class="logo__img">
+
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="kateg.html" class="menu__list-link">Корзина</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="obrsv.html" class="menu__list-link">Обратная связь</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="kart.html" class="menu__list-link">Скидочная карта</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="prais.html" class="menu__list-link">прайс</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#car" class="menu__list-link">где мы</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <section class="top">
+                <div class="container">
+                    <h3 class="title">
+                        Изделия из бисера ручной работы
+                    </h3>
+                </div>
+            </section>
+         
+                <div class="mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide">
+
+                            <img src="images/slide1.jpeg" alt="" class="">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slide2.jpeg" alt="" class="">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slide3.jpeg" alt="" class="">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slide4.jpeg" alt="" class="">
+                        </div> -->
+                       
+                       
+                        <div class="swiper-slide" style="background-image: url(images/slide3.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide2.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide1.jpeg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide4.jpeg);"></div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            
+        </main>
+        
+        <main class="main">
+            <section class="nap">
+                <div class="container">
+                    <h2 class="section-title">Категории товаров</h2>
+                    <div class="tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="card">
+                                    <img class="card__img" src="images/foto1.jpeg" alt=""> 
+                                    <a href="kateg.html#bracelet" class="">Браслеты</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/foto2.jpeg" alt="">
+                                    <a href="kateg.html#ring" class="">Кольца</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/foto3.jpeg" alt="">
+                                    <a href="kateg.html#kolie" class="">Колье</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="images/foto4.jpeg" alt="">
+                                    <a href="kateg.html#earri" class="">Сережки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container mard">
+                <ul class="inst">
+                    <li class="inst__item">
+                        <a href="#" class="inst__item-link">
+                            <img class="inst__item-link" src="images/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="inst__item">
+                        <a href="#" class="inst__item-link">
+                            <img class="inst" src="images/vk.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__cont">
+                    <p class="footer__cont-text">
+                        89184579005
+                    </p>
+                    <p class="footer__cont-text">
+                        aneliapartsikova4000@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="carta" id="car"> 
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A99750d90990be58a4fd04347d34d491c2b08dcb1fd625bcd9de910cb40792d65&amp;width=379&amp;height=261&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <script src="/js/swiper-bundle.min.js"></script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script>
+        example.onmouseover = function() {
+        example.style.background= "violet";
+        };
+        
+        example.onmouseleave = function() {
+        example.style.background= "black";
+        };
+    </script>
+    <script>
+    const Swiper = new swiper(".swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      }); 
+    </script> -->
+    
+</body>
+</html>
